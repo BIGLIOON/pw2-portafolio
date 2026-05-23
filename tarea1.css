@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e9eef5;
+    color: #222;
+}
+
+header{
+    background: #1e3a8a; 
+    padding: 20px 40px;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.brand img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.foto-perfil{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px auto;
+    border: 4px solid #1e3a8a;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #38bdf8;
+}
+
+.container{
+    width: 85%;
+    margin: 35px auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.container h2{
+    color: black;
+    margin-bottom: 20px;
+    border-left: 6px solid black;
+    padding-left: 10px;
+}
+
+.container h3{
+    margin-top: 20px;
+    color: #0f172a;
+}
+
+.container p{
+    margin-top: 10px;
+    line-height: 1.7;
+}
+
+footer{
+    background-color: #0f172a;
+    color: white;
+    padding: 25px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#nombre{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.footer-right{
+    text-align: right;
+        max-width: 40%;
+
+}
+
+.footer-right p{
+    margin: 5px 0;
+        max-width: 50%;
+
+}
+
+.referencias{
+    margin-top: 30px;
+}
+
+.referencias ul{
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.referencias li{
+    margin-bottom: 10px;
+}
+
+@media(max-width:768px){
+
+    .header-content{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container{
+        width: 95%;
+    }
+
+     footer{
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer-right{
+        text-align: center;
+    }
+}
